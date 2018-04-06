@@ -4,15 +4,14 @@ use HTML::TreeBuilder;
 
 $|=0;
 
-my $users = {'user1'=>'pw1',
-             'user2'=>'pw2'
+my $users = {
+              'user1'=>'pw1',
+              'user2'=>'pw2'
             };
-
-my $links = {};
 
 my $mech = WWW::Mechanize->new();
 
-my $proxy_ip = '0.0.0.0';
+my $proxy_ip   = '0.0.0.0';
 my $proxy_port = '0';
 $mech->proxy(['http','https'],"http://$proxy_ip:$proxy_port");
 
@@ -21,9 +20,9 @@ $mech->get($url) || die "$!";
 
 $mech->submit_form(
     form_id => 'login-form',
-    fields    => { 'LoginForm[username]' => 'user',
-                   'LoginForm[password]' => 'pw' },
-    button    => 'login-button'
+    fields  => { 'LoginForm[username]' => 'user',
+                 'LoginForm[password]' => 'pw' },
+    button  => 'login-button'
 );
 
 #<a href="/index.php?r=usage%2Findex">Használat és Igazolás</a>
@@ -49,17 +48,15 @@ foreach my $user ( sort keys %{$users} ) {
 	foreach my $tr ($tree->look_down(_tag => 'tr')) {
 		foreach my $td ($tr->look_down(_tag => 'td')) {
 			if ($td->as_text ne "") {
-        print $td->as_text."\t";
+				print $td->as_text."\t";
 			} else {
-        next;
-      }
+				next;
+			}
 			my $a = $td->look_down(_tag => 'a') or next;
-			push @{$links->{$u}},$url.$a->attr('href');
 		}
 		print "\n";
 	}
 	print "\n";
-
 }
 
 $mech->get('https://www.gnssnet.hu/index.php?r=site%2Fuserout') || die "$!";
