@@ -31,6 +31,8 @@ $mech->submit_form(
 #<a href="/index.php?r=usage%2Fview&amp;id=10863">Valós idejű szolgáltatás</a>
 #https://www.gnssnet.hu/index.php?r=usage%2Fview&id=0000	user1
 #https://www.gnssnet.hu/index.php?r=usage%2Fview&id=0000	user2
+#https://www.gnssnet.hu/index.php?r=usage%2Fviewpp&id=0000 ... Utólagos adatszolgáltatás
+
 
 foreach my $user ( sort keys %{$users} ) {
 	$mech->get('https://www.gnssnet.hu/index.php?r=usage%2Fview&id='.$users->{$user}) || die "$!";
