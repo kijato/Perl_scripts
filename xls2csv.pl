@@ -1,13 +1,13 @@
-#!C:\perl\perl.exe
 #!/usr/bin/perl -w
-#!C:\programs\perl\perl.exe -w
 
 use strict;
 use warnings;
 use Spreadsheet::ParseExcel;
-use encoding "LATIN2";
+#use encoding "LATIN2";
+#use encoding 'utf8';
+#$|=0;
 
-my $fajl=$ARGV[0] || die "Hiányzó paraméter!\n";
+my $fajl=$ARGV[0] || die "HiÃ¡nyzÃ³ paramÃ©ter!\n";
 my $formated = $ARGV[1] || 1;
 my $separator = $ARGV[2] || ';';
 
@@ -27,9 +27,9 @@ for my $worksheet ( $workbook->worksheets() ) {
       unless ($cell) { print $separator; next; }
       #print "Row, Col    = ($row, $col)\t";
       if ($formated) {
-        print $cell->value();
+        print $cell->value(); # The value() method returns the formatted value of the cell.
       } else {
-        print $cell->unformatted();
+        print $cell->unformatted(); # The unformatted() method returns the unformatted value of the cell.
       }
       print $separator;
     }
