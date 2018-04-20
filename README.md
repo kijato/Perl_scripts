@@ -1,6 +1,7 @@
 ## gnss_fomi_stat.pl
-(Célja a "FÖMI"-s statisztika kevésbé "csicsás" megjelenítése.)
+A "FÖMI"-s GNSS statisztika kevésbé "csicsás" megjelenítése.
 
-## ...
+## xls2csv.pl
+EXCEL munkafüzet átalakítása CSV formátumba.
 
 ## ...
