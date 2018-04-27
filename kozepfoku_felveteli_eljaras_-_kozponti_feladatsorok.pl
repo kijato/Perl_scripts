@@ -10,6 +10,16 @@ $mech->get($url) || die "$!";
 #die unless ($mech->success);
 #print $mech->content;
 
+#https://www.oktatas.hu/kozneveles/kozepfoku_felveteli_eljaras/kozponti_feladatsorok/2002_evi_irasbeli
+#my @links = $mech->find_all_links( url_regex =>  qr/(20\d{2})_evi_irasbeli/i );
+
+#https://www.oktatas.hu/kozneveles/kozepfoku_felveteli_eljaras/kozponti_feladatsorok/irasbeli2003ev
+#my @links = $mech->find_all_links( url_regex =>  qr/irasbeli(20\d{2})ev/i );
+
+#https://www.oktatas.hu/kozneveles/kozepfoku_felveteli_eljaras/kozponti_feladatsorok/2007evi_6_8osztalyos
+#my @links = $mech->find_all_links( url_regex =>  qr/(20\d{2})evi_6_8osztalyos/i );
+
+#https://www.oktatas.hu/kozneveles/kozepfoku_felveteli_eljaras/kozponti_feladatsorok/2004evi_9evfolyamra
 my @links = $mech->find_all_links( url_regex =>  qr/(20\d{2})evi_9evfolyamra/i );
 for my $link ( @links ) {
 	my $url = $link->url_abs;
