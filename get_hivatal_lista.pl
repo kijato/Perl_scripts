@@ -4,7 +4,7 @@ use strict;
 use WWW::Mechanize;
 use CAM::PDF;
 use XML::Parser;
-use Data::Dumper;
+#use Data::Dumper;
 use UTF8; # Perl pragma to enable/disable UTF-8 (or UTF-EBCDIC) in source code (necessary if you want to use Unicode in function or var names)
 use DateTime;
 
