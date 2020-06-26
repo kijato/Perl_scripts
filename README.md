@@ -2,6 +2,9 @@
 ## get_hivatal_lista.pl
 A https://tarhely.gov.hu/hivatalkereso/hivatal_lista.pdf oldalon elérhető PDF-be rejtett xml dokumentum kibontása CSV-be.
 
+## hivatal_lista.sql
+A 'https://tarhely.gov.hu/hivatalkereso/hivatal_lista.pdf' címen elérhető PDF-be ágyazott XML-ből CSV-be mentett adatokat tároló tábla lehetséges struktúrája.
+
 ## gnss_fomi_stat.pl
 A "FÖMI"-s GNSS statisztika kevésbé "csicsás" megjelenítése.
 
