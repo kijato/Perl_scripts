@@ -19,7 +19,7 @@ my $pdffile = "hivatal_lista_".$dt->ymd('').'.pdf';
 #
 
 my $mech = WWW::Mechanize->new();
-$mech->proxy(['http','https'],'http://10.8.3.100:8080/');
+#$mech->proxy(['http','https'],'http://<IP>:<port>/');
 
 my $url = 'https://tarhely.gov.hu/hivatalkereso/hivatal_lista.pdf';
 print "Download";
