@@ -3,11 +3,11 @@
 use strict;
 use warnings;
 use Spreadsheet::ParseExcel;
-#use encoding "LATIN2";
+use encoding "LATIN2";
 #use encoding 'utf8';
 #$|=0;
 
-my $fajl=$ARGV[0] || die "Hi√°nyz√≥ param√©ter!\n";
+my $fajl=$ARGV[0] || die "Hi·nyzÛ paramÈter!\n";
 my $formated = $ARGV[1] || 1;
 my $separator = $ARGV[2] || ';';
 
