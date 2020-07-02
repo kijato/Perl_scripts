@@ -12,6 +12,4 @@ A PDF-ek és más doksik kötegelt letöltése...
 EXCEL munkafüzet átalakítása CSV formátumba.
 
 ## get_hivatal_lista.pl
-A https://tarhely.gov.hu/hivatalkereso/hivatal_lista.pdf oldalon elérhető PDF-be rejtett xml dokumentum kibontása CSV-be.
-[ Lásd itt: https://github.com/kijato/hivatal_lista ]
-
+Az eredeti feladat a https://tarhely.gov.hu/hivatalkereso/hivatal_lista.pdf oldalon elérhető PDF feldolgozása volt... végül egy [webalkalmazás](https://github.com/kijato/hivatal_lista) is épült "köré".
