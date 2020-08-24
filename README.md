@@ -13,3 +13,6 @@ EXCEL munkafüzet átalakítása CSV formátumba + kötegelve.
 
 ## get_hivatal_lista.pl
 Az eredeti feladat a https://tarhely.gov.hu/hivatalkereso/hivatal_lista.pdf oldalon elérhető PDF feldolgozása volt... végül egy [webalkalmazás](https://github.com/kijato/hivatal_lista) is épült "köré".
+
+## PDFEmbededExtractor.pl
+PDF fájlokba ágyazott állományok kibontására szolgál. A paramétere lehet egyetlen fájl, vagy metaklarakter is. (A rekurzió egyenlőre nincs implementálva...)
