@@ -2,6 +2,9 @@
 ## gnss_fomi_stat.pl
 A "FÖMI"-s GNSS statisztika kevésbé "csicsás" megjelenítése.
 
+## gnss_geotrade_stat.pl
+A "geotradegnss" GNSS statisztika ömlesztett megjelenítése.
+
 ## goalkicker_pdf-downloader.pl
 Automata PDF letöltő a https://goalkicker.com oldalon elérhető leírásokhoz.
 
