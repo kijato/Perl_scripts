@@ -8,6 +8,9 @@ A "geotradegnss" GNSS statisztika ömlesztett megjelenítése.
 ## goalkicker_pdf-downloader.pl
 Automata PDF letöltő a https://goalkicker.com oldalon elérhető leírásokhoz.
 
+## kill_LF.pl
+A "lágy sortörés" cseréje szóközre.
+
 ## kozepfoku_felveteli_eljaras_-_kozponti_feladatsorok.pl
 A PDF-ek és más doksik kötegelt letöltése...
 
